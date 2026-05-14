@@ -9,7 +9,12 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
+import logging
 
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    level=logging.INFO
+)
 # --- CONFIGURATION ---
 BOT_TOKEN = "8137290461:AAFrr_S20IFHETYRhKhxTBM0lxv1NO6pXB4"
 ALLOWED_CHAT_IDS = [7718800367, 7669227388,6475709676]
